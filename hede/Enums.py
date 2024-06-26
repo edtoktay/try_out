@@ -1,0 +1,16 @@
+from enum import Enum
+
+
+class DataStatus(Enum):
+    NEW = 'NEW'
+    IGNORE = 'IGNORE'
+    IN_PROGRESS = 'IN PROGRESS'
+    COMPLETED = 'COMPLETED'
+    IN_ERROR = 'IN ERROR'
+    TAG_NOT_CONFIGURED = 'TAG NOT CONFIGURED'
+    ALREADY_PROCESSED = 'ALREADY PROCESSED'
+
+
+class DataType(Enum):
+    ORIGINAL = 'ORIGINAL'
+    INTERPOLATED = 'INTERPOLATED'
